@@ -1,2 +1,2 @@
 # DaeGPT
-##GPT Mobile app for ios with YWC
+## GPT Mobile app for ios with YWC
