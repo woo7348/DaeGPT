@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		D15116BB29A50C24001B5C55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15116BA29A50C24001B5C55 /* AppDelegate.swift */; };
 		D15116BD29A50C24001B5C55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15116BC29A50C24001B5C55 /* SceneDelegate.swift */; };
-		D15116BF29A50C24001B5C55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15116BE29A50C24001B5C55 /* ViewController.swift */; };
 		D15116C229A50C24001B5C55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D15116C029A50C24001B5C55 /* Main.storyboard */; };
 		D15116C429A50C25001B5C55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D15116C329A50C25001B5C55 /* Assets.xcassets */; };
 		D15116C729A50C25001B5C55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D15116C529A50C25001B5C55 /* LaunchScreen.storyboard */; };
+		D15116CF29A61ECB001B5C55 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15116CE29A61ECB001B5C55 /* LoginViewController.swift */; };
+		D15116D129A62FCC001B5C55 /* EnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15116D029A62FCC001B5C55 /* EnterEmailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D15116B729A50C24001B5C55 /* DaeGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaeGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15116BA29A50C24001B5C55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D15116BC29A50C24001B5C55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D15116BE29A50C24001B5C55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D15116C129A50C24001B5C55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D15116C329A50C25001B5C55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D15116C629A50C25001B5C55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D15116C829A50C25001B5C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D15116CE29A61ECB001B5C55 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D15116D029A62FCC001B5C55 /* EnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +58,10 @@
 		D15116B929A50C24001B5C55 /* DaeGPT */ = {
 			isa = PBXGroup;
 			children = (
+				D15116CE29A61ECB001B5C55 /* LoginViewController.swift */,
+				D15116D029A62FCC001B5C55 /* EnterEmailViewController.swift */,
 				D15116BA29A50C24001B5C55 /* AppDelegate.swift */,
 				D15116BC29A50C24001B5C55 /* SceneDelegate.swift */,
-				D15116BE29A50C24001B5C55 /* ViewController.swift */,
 				D15116C029A50C24001B5C55 /* Main.storyboard */,
 				D15116C329A50C25001B5C55 /* Assets.xcassets */,
 				D15116C529A50C25001B5C55 /* LaunchScreen.storyboard */,
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D15116BF29A50C24001B5C55 /* ViewController.swift in Sources */,
+				D15116CF29A61ECB001B5C55 /* LoginViewController.swift in Sources */,
 				D15116BB29A50C24001B5C55 /* AppDelegate.swift in Sources */,
+				D15116D129A62FCC001B5C55 /* EnterEmailViewController.swift in Sources */,
 				D15116BD29A50C24001B5C55 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
