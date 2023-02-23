@@ -143,13 +143,13 @@
         <!--이메일/비밀번호 입력하기-->
         <scene sceneID="MR7-dW-dWN">
             <objects>
-                <viewController id="nQT-Te-UJb" customClass="EnterEmailViewController" customModule="DaeGPT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EnterEmailViewController" id="nQT-Te-UJb" customClass="EnterEmailViewController" customModule="DaeGPT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zBx-Sw-pSL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Msn-cn-v2O">
-                                <rect key="frame" x="30" y="173" width="333" height="248.33333333333337"/>
+                                <rect key="frame" x="30" y="173" width="333" height="228"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일주소를 입력해주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vaz-Tq-EZE">
                                         <rect key="frame" x="0.0" y="0.0" width="333" height="24"/>
@@ -179,8 +179,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KY6-kX-Ivu">
-                                        <rect key="frame" x="0.0" y="228" width="333" height="20.333333333333343"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KY6-kX-Ivu">
+                                        <rect key="frame" x="0.0" y="228" width="333" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
@@ -188,7 +188,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LP7-jb-wx9">
-                                <rect key="frame" x="146.66666666666666" y="521" width="100" height="60"/>
+                                <rect key="frame" x="146.66666666666666" y="500.66666666666674" width="100" height="60"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="1jZ-RW-k3q"/>
@@ -227,6 +227,52 @@
             </objects>
             <point key="canvasLocation" x="1193" y="-176"/>
         </scene>
+        <!--Main View Controller-->
+        <scene sceneID="b1T-WM-4zU">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="W1H-ak-OZ7" customClass="MainViewController" customModule="DaeGPT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rvS-YD-AD9">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="환영합니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7A-FS-uyM">
+                                <rect key="frame" x="139" y="411" width="115" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRa-It-Woi">
+                                <rect key="frame" x="153" y="473.66666666666669" width="87" height="36"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="로그아웃">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="logoutButtonTapped:" destination="W1H-ak-OZ7" eventType="touchUpInside" id="nUR-xU-MbE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jkL-Ew-ZNk"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="w7A-FS-uyM" firstAttribute="centerX" secondItem="jkL-Ew-ZNk" secondAttribute="centerX" id="4SH-Sr-NHk"/>
+                            <constraint firstItem="uRa-It-Woi" firstAttribute="centerX" secondItem="w7A-FS-uyM" secondAttribute="centerX" id="6cD-S4-3mY"/>
+                            <constraint firstItem="uRa-It-Woi" firstAttribute="centerX" secondItem="jkL-Ew-ZNk" secondAttribute="centerX" id="DPf-Md-WXe"/>
+                            <constraint firstItem="w7A-FS-uyM" firstAttribute="centerY" secondItem="jkL-Ew-ZNk" secondAttribute="centerY" id="KRp-Qa-h4J"/>
+                            <constraint firstItem="uRa-It-Woi" firstAttribute="top" secondItem="w7A-FS-uyM" secondAttribute="bottom" constant="20" id="jvJ-BU-E5Y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="w7A-FS-uyM" id="Aeu-XN-emM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3qg-PJ-Fnv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1956.4885496183206" y="-176.05633802816902"/>
+        </scene>
     </scenes>
     <resources>
         <image name="logo_apple" width="33.333332061767578" height="33.333332061767578"/>
@@ -235,6 +281,9 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
