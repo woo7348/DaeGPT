@@ -163,7 +163,7 @@
                                             <constraint firstAttribute="height" constant="50" id="rPn-8Z-UOV"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호를 입력하세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wd-QJ-3qE">
                                         <rect key="frame" x="0.0" y="114" width="333" height="24"/>
@@ -235,13 +235,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="환영합니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7A-FS-uyM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="환영합니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7A-FS-uyM">
                                 <rect key="frame" x="139" y="411" width="115" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRa-It-Woi">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRa-It-Woi">
                                 <rect key="frame" x="153" y="473.66666666666669" width="87" height="36"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -258,15 +258,15 @@
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                         <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="w7A-FS-uyM" firstAttribute="centerX" secondItem="jkL-Ew-ZNk" secondAttribute="centerX" id="4SH-Sr-NHk"/>
+                            <constraint firstItem="w7A-FS-uyM" firstAttribute="centerX" relation="greaterThanOrEqual" secondItem="jkL-Ew-ZNk" secondAttribute="centerX" id="4SH-Sr-NHk"/>
                             <constraint firstItem="uRa-It-Woi" firstAttribute="centerX" secondItem="w7A-FS-uyM" secondAttribute="centerX" id="6cD-S4-3mY"/>
                             <constraint firstItem="uRa-It-Woi" firstAttribute="centerX" secondItem="jkL-Ew-ZNk" secondAttribute="centerX" id="DPf-Md-WXe"/>
-                            <constraint firstItem="w7A-FS-uyM" firstAttribute="centerY" secondItem="jkL-Ew-ZNk" secondAttribute="centerY" id="KRp-Qa-h4J"/>
+                            <constraint firstItem="w7A-FS-uyM" firstAttribute="centerY" relation="greaterThanOrEqual" secondItem="jkL-Ew-ZNk" secondAttribute="centerY" id="KRp-Qa-h4J"/>
                             <constraint firstItem="uRa-It-Woi" firstAttribute="top" secondItem="w7A-FS-uyM" secondAttribute="bottom" constant="20" id="jvJ-BU-E5Y"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="welcomeLabel" destination="w7A-FS-uyM" id="Aeu-XN-emM"/>
+                        <outlet property="welcomeLabel" destination="w7A-FS-uyM" id="QAe-7c-twh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qg-PJ-Fnv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

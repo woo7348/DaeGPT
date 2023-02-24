@@ -54,7 +54,6 @@
 				1C7DC99043A42DE8ECF2B3BC /* Pods-DaeGPT.debug.xcconfig */,
 				99029A1DBE6A96820FDCD975 /* Pods-DaeGPT.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

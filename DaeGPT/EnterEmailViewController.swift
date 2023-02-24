@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import Firebase
 
 class EnterEmailViewController : UIViewController {
     @IBOutlet weak var nextButton: UIButton!
@@ -37,12 +38,24 @@ class EnterEmailViewController : UIViewController {
         let email = emailTextField.text ?? ""
         let password = passwordTextfField.text ?? ""
         
+
         //신규 사용자 생성
-        Auth.auth().createUser(withEmail: email, password: password) {[weak self]   authResult, error in
-            guard let self = self else { return }
-            
-            self.showMainViewController()
-        }
+//        Auth.auth().createUser(withEmail: email, password: password) {[weak self]   authResult, error in
+//            guard let self = self else { return }
+//
+//
+//            if let error = error {
+//                let code = (error as NSError).code
+//                switch code {
+//                case 17007: // 이미 가입한 계정일 때
+//                    self.loginUser(withEmail: email, password: password) //로그인하기
+//                default:
+//                    self.errorMessageLabel.text = error.localizedDescription
+//                }
+//            } else {
+//                self.showMainViewController()
+//            }
+//        }
     }
     
     private func showMainViewController() {
@@ -50,6 +63,18 @@ class EnterEmailViewController : UIViewController {
         let mainViewController = storyboard.instantiateViewController(identifier: "MainViewController")
         mainViewController.modalPresentationStyle  = .fullScreen
         navigationController?.show(mainViewController, sender: nil)
+    }
+    
+    private func loginUser(withEmail email: String, password: String) {
+        Auth.auth().signIn(withEmail: email, link: password) {[weak self] _, error in
+            guard let self = self else { return }
+            
+            if let error = error {
+                self.errorMessageLabel.text = error.localizedDescription
+            } else {
+                self.showMainViewController()
+            }
+        }
     }
 }
 

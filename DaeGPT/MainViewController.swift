@@ -24,10 +24,8 @@ class MainViewController: UIViewController {
         
         let email = Auth.auth().currentUser?.email ?? "고객"
         
-        welcomeLabel.text = """
-        환영합니다.
-        \(email)님
-        """
+        welcomeLabel.text = "환영합니다. \(email)님 "
+         
     }
     
     @IBAction func logoutButtonTapped(_ sender: UIButton) {
