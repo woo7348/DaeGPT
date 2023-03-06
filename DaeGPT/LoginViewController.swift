@@ -34,7 +34,7 @@ class LoginViewController: UIViewController {
         navigationController?.navigationBar.isHidden = true
     }
     
-    let id = "com.googleusercontent.apps.1073742045305-2tku010ljbkqbrgqi8h6knnv8ua40edk";)
+    let id = "00000000000000000000000";)
     let signInConfig = GIDConfiguration(clientID: id)
     
     @IBAction func googleLoginButtonTapped(_ sender: GIDSignInButton) {
