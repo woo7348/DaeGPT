@@ -13,8 +13,8 @@ import OpenAI
 //    @IBOutlet weak var textField: UITextField!
 //    @IBOutlet weak var tableView: UITableView!
 //
-//    let completion = Completion(apiKey: "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")
-//    let completion = Completion(apiKey: "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")
+//    let completion = Completion(apiKey: "")
+//    let completion = Completion(apiKey: "")
 //    var messages: [String] = []
 //
 //    override func viewDidLoad() {
