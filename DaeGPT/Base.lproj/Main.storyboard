@@ -133,7 +133,7 @@
                     <connections>
                         <outlet property="appleLoginButton" destination="ifz-G2-IEp" id="2Lw-8n-lHi"/>
                         <outlet property="emailLoginButton" destination="5Yb-IB-9Gq" id="fhG-eN-GwW"/>
-                        <outlet property="googleLoginButton" destination="28p-sO-lQ8" id="GAc-Nu-OMT"/>
+                        <outlet property="googleLoginButton" destination="28p-sO-lQ8" id="Dd6-VW-NKi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3l8-ZE-2B1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -181,8 +181,8 @@
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KY6-kX-Ivu">
                                         <rect key="frame" x="0.0" y="228" width="333" height="0.0"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemPinkColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -273,6 +273,43 @@
             </objects>
             <point key="canvasLocation" x="1956.4885496183206" y="-176.05633802816902"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="O6Q-cn-F95">
+            <objects>
+                <viewController id="Q8L-FD-HIa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T5i-rZ-3uL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="g07-4M-U7q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fVG-HA-d5C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1956" y="570"/>
+        </scene>
+        <!--Gpt View Controller-->
+        <scene sceneID="HQX-Pq-YI5">
+            <objects>
+                <viewController id="qjf-Mc-b8Y" customClass="GptViewController" customModule="DaeGPT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Be2-XW-p6d">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T0f-Qo-OhI">
+                                <rect key="frame" x="40" y="125" width="310" height="649"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gmM-rb-ks7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e6a-ti-ZtR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1188.5496183206105" y="569.71830985915494"/>
+        </scene>
     </scenes>
     <resources>
         <image name="logo_apple" width="33.333332061767578" height="33.333332061767578"/>
@@ -290,8 +327,8 @@
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

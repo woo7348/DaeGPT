@@ -17,6 +17,7 @@
 		D15116D129A62FCC001B5C55 /* EnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15116D029A62FCC001B5C55 /* EnterEmailViewController.swift */; };
 		D15116D329A78CE2001B5C55 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15116D229A78CE2001B5C55 /* MainViewController.swift */; };
 		D15116D529A7926B001B5C55 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D15116D429A7926B001B5C55 /* GoogleService-Info.plist */; };
+		D15116D729A9E44C001B5C55 /* GptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15116D629A9E44C001B5C55 /* GptViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		D15116D029A62FCC001B5C55 /* EnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailViewController.swift; sourceTree = "<group>"; };
 		D15116D229A78CE2001B5C55 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D15116D429A7926B001B5C55 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D15116D629A9E44C001B5C55 /* GptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GptViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				D15116C529A50C25001B5C55 /* LaunchScreen.storyboard */,
 				D15116C829A50C25001B5C55 /* Info.plist */,
 				D15116D429A7926B001B5C55 /* GoogleService-Info.plist */,
+				D15116D629A9E44C001B5C55 /* GptViewController.swift */,
 			);
 			path = DaeGPT;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			files = (
 				D15116CF29A61ECB001B5C55 /* LoginViewController.swift in Sources */,
 				D15116BB29A50C24001B5C55 /* AppDelegate.swift in Sources */,
+				D15116D729A9E44C001B5C55 /* GptViewController.swift in Sources */,
 				D15116D129A62FCC001B5C55 /* EnterEmailViewController.swift in Sources */,
 				D15116BD29A50C24001B5C55 /* SceneDelegate.swift in Sources */,
 				D15116D329A78CE2001B5C55 /* MainViewController.swift in Sources */,

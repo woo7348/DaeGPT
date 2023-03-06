@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailLoginButton: UIButton!
     @IBOutlet weak var appleLoginButton: UIButton!
-    @IBOutlet weak var googleLoginButton: UIButton!
+    @IBOutlet weak var googleLoginButton: GIDSignInButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,25 +34,23 @@ class LoginViewController: UIViewController {
         navigationController?.navigationBar.isHidden = true
     }
     
-    @IBAction func googleLoginButtonTapped(_ sender: UIButton) {
-        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
-        let signInConfig = GIDConfiguration.init(clientID: clientID)
-        
-      GIDSignIn.sharedInstance()?.signIn(with: signInConfig, presenting: self) { user, error in
-        guard error == nil else { return }
-
-        guard let authentication = user?.authentication else { return }
-        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken!, accessToken: authentication.accessToken)
-        // access token 부여 받음
-        
-        // 파베 인증정보 등록
-        Auth.auth().signIn(with: credential) {_,_ in
-            // token을 넘겨주면, 성공했는지 안했는지에 대한 result값과 error값을 넘겨줌
-            self.showMainViewController()
-        }
-      }
-    }
+    let id = "com.googleusercontent.apps.1073742045305-2tku010ljbkqbrgqi8h6knnv8ua40edk";)
+    let signInConfig = GIDConfiguration(clientID: id)
     
+    @IBAction func googleLoginButtonTapped(_ sender: GIDSignInButton) {
+        
+        GIDSignIn.sharedInstance.signIn(withPresenting: self.signInConfig, presenting: self) { user, error in
+            guard error == nil else { return }
+            guard let user = user else { return }
+            
+            user.authentication.do { [self] authentication, error in
+                guard error == nil else { print(error); return }
+                guard let authentication = authentication else { return }
+                
+                let idToken = authentication.idToken
+            }
+        }
+    }
     @IBAction func appleLoginButtonTapped(_ sender: UIButton) { //firebase 인증
     }
 }
