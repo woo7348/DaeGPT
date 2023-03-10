@@ -69,7 +69,7 @@
                                             <segue destination="nQT-Te-UJb" kind="show" id="erb-Hh-7sf"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28p-sO-lQ8">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28p-sO-lQ8" customClass="GIDSIgnInButton">
                                         <rect key="frame" x="0.0" y="75" width="333" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="tki-KO-EJZ"/>
@@ -273,20 +273,29 @@
             </objects>
             <point key="canvasLocation" x="1956.4885496183206" y="-176.05633802816902"/>
         </scene>
-        <!--View Controller-->
+        <!--Loginned View Controller-->
         <scene sceneID="O6Q-cn-F95">
             <objects>
-                <viewController id="Q8L-FD-HIa" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="T5i-rZ-3uL">
+                <viewController storyboardIdentifier="LoginnedViewController" id="Q8L-FD-HIa" customClass="LoginnedViewController" customModule="DaeGPT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="LoginnedViewController" id="T5i-rZ-3uL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="소셜로그인 환영합니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZqR-K2-hh5">
+                                <rect key="frame" x="84" y="288" width="225" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="g07-4M-U7q"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fVG-HA-d5C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1956" y="570"/>
+            <point key="canvasLocation" x="1954.9618320610687" y="569.71830985915494"/>
         </scene>
         <!--Gpt View Controller-->
         <scene sceneID="HQX-Pq-YI5">

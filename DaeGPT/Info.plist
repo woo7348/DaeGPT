@@ -16,7 +16,9 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
-			<array/>
+			<array>
+				<string>site.notion.meteor-rugby-d86.DaeGPT</string>
+			</array>
 		</dict>
 	</array>
 	<key>UIApplicationSceneManifest</key>
